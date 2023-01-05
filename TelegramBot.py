@@ -1,3 +1,6 @@
+# Telgeram bot needs "python-telegram-bot" library, which you will need to install using pip command.
+# pip install python-telegram-bot
+
 import os
 import logging
 from telegram.ext import Updater, CommandHandler, MessageHandler, Filters
