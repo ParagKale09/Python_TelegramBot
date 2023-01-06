@@ -17,6 +17,7 @@ def pdf(update, context):
         context.bot.sendDocument(update.effective_chat.id,document=open('File_path','rb'))
         #other Method
         #context.bot.sendDocument(update.effective_chat.id,"link_of_PDF_File")
+        #For link_of_PDF_File - Google drive link (Sharing link) is not supported.
     else:
         update.message.reply_text("Sorry, I don't have that PDF file. Please make sure you spelled the name correctly.")
 
