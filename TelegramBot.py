@@ -15,6 +15,8 @@ def pdf(update, context):
     if file_name == "VFD":
         update.message.reply_text("Getting Ready Your File...")
         context.bot.sendDocument(update.effective_chat.id,document=open('File_path','rb'))
+        #other Method
+        #context.bot.sendDocument(update.effective_chat.id,"link_of_PDF_File")
     else:
         update.message.reply_text("Sorry, I don't have that PDF file. Please make sure you spelled the name correctly.")
 
